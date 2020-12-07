@@ -1,160 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+/* General styling*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+      float: none;
+      width: 100%;
+    }
+  }
+
 
 body {
-    font-family: 'Roboto', sans-serif;
-    transition: background-color .5s;
-    
-  }
-  
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #333;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-    padding: 0 0 0 16px;
-    height: 100vh;
-    background-image: url("../img/scene.jpg");
-    background-size: cover;
+}
 
-    .container-top {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+/* Ulitily classes */ 
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
 
-        .topbox-text {
-            &.item1 {
-                margin: 8% 0 0 0;
-            }
+.text-primary {
+    color: #3693ff;
+}
 
-            &.item2 {
-                margin: 30% 0 0 0;
-            }
+.bg-light {
+    Background: #f4f4f4;
+    color: #333;
+}
 
-            text-transform: uppercase;
-
-            h1 {
-                font-size: 54px;
-                line-height: 35px;
-                font-weight: 700;
-                margin: 0;
-            }
-            h2 {
-                font-size: 36px;
-                line-height: 25px;
-                font-weight: 700;
-                margin: 0;
-            }
-            
-            p {
-                font-weight: 300;
-                margin: 0;
-                font-size: 13px;
-            }
-        }
-    }
-  }
-
-  .center-container {
-      
-    justify-content: center;
+/* Navbar */
+#navbar {
     display: flex;
-    padding: 50px 0 0 0;
-      .image-container {
-          width: 80%;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          h4 {
-              margin: 0;
-              padding: 10px 15px 0 15px;
-              text-transform: uppercase;
-              font-weight: 300;
-          }
-          p {
-              margin: 0;
-              padding: 10px 15px 0 15px;
-              text-transform: uppercase;
-              font-weight: 700;
-              font-size: 12px;
-          }
-          .image-content {
-              display: flex;
-              &.item1 {
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #3693ff;
+}   
 
-                  width: 50%;
-                  height: 400px;
-                  background-image: url("../img/ice.jpg");
-                  background-size: cover;
-              }
-              &.item2 {
-                
-                width: 24%;
-                height: 400px;
-                background-image: url("../img/tree.jpg");
-                background-size: cover;
-             }
-              &.item3 {
-                width: 24%;
-                height: 400px;
-                background-image: url("../img/wintry.jpg");
-                background-size: cover;
-                position: relative;
-                .image-content-textarea {
-                    bottom: 0;
-                    position: absolute;
-                    color: #ededed;
-                    height: 150px;
-                    width: 100%;
-                    background-color: #00000099;
-                
-                }
-            }
-              &.item4 {
-                margin-top: 1%;
-                width: 100%;
-                height: 400px;
-                background-image: url("../img/nature.jpg");
-                background-size: cover;
-            }
-          }
-      }
-    }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1,3rem;
+    margin: 0 0,5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}   
+
+#navbar li a:hover {
+    background-color: #3693ff;
+} 
+
+/* Showcase Area*/
+#showcase {
+    background: url(img/background.jpg) no-repeat center center/cover;
+    height: 91.7vh;
+
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: url(https://www.blindtreasures.com/wp-content/uploads/2019/10/ocean-pollution-solutions.jpg) no-repeat center center/cover;
+    color: #fff;
+}
+
+.showcase-content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.showcase-content .btn {
+    font-size: 1.5rem;
+    padding: 1rem 10rem;  
+    transition: color 0.3s,
+}
+
+.showcase-content .btn:hover {
+    background: #3693ff;
+    color: #fff;
+}
+
+.btn {
+    color: #3693ff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #3693ff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Section: About */
+#about {
+    padding: 5rem 0;
+}
+
+#about h2, #services h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#about h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p.lead {
+    margin-bottom: 1rem;
+}
+
+#about .about-content {
+    display: flex;
+
+}
+
+#about .about-text,
+#about .about-image {
+    flex: 1;
+} 
+
+#about .about-text{
+    text-align: justify;
+}
+
+#about .about-image img {
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    margin-top: 60px;
+
+}
+
+/* Section: Services */
+#services {
+    padding: 5rem 0;
+}
+
+#services h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#services .boxes {
+    display: flex;
+}
+
+#services .box{
+    background: #fff;
+    flex: 1;
+    padding: 3rem;
+    margin: 0 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    font-size: 1.3rem;
+}
+
+#services .box i {
+    color: #fff;
+    padding: 1rem;
+    background: #3693ff;
+    border-radius: 50%;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+}
