@@ -90,17 +90,17 @@ body {
 
 /* Showcase Area*/
 #showcase {
-    background: url(img/background.jpg) no-repeat center center/cover;
-    height: 91.7vh;
+    background-image: url(/img/plastic.jpg) no-repeat center center/cover;
+    height: 80vh;
+    
 
 }
 
 .showcase-content {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
+    align-items: left;
     position: absolute;
     top: 81px;
     left:0;
@@ -111,12 +111,13 @@ body {
 }
 
 .showcase-content h1 {
-    font-size: 64px;
+    font-size: 70px;
     margin-bottom: 32px;
+    float: left;
 }
 
 .showcase-content .btn {
-    font-size: 24px;
+    font-size: 30px;
     padding: 16px 160px;  
     transition: color 0.3s,
 }
@@ -139,15 +140,18 @@ body {
 /* Section: About */
 #about {
     padding: 80px 0;
+    background-color: $colorpal4;
 }
 
 #about h2, #services h2{
+    color: $colorpal1;
     text-align: center;
     font-size: 48px;
     margin-bottom: 48px;
 }
 
 #about h3 {
+    color: $colorpal1;
     font-size: 32px;
     margin-bottom: 16px;
 }
@@ -168,13 +172,13 @@ body {
 
 #about .about-text{
     text-align: justify;
+    color: $colorpal1;
 }
 
 #about .about-image img {
     display: block;
     margin-left: auto;
     width: 75%;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     margin-top: 60px;
 
 }
@@ -182,6 +186,7 @@ body {
 /* Section: Services */
 #services {
     padding: 80px 0;
+    background-color: $colorpal5;
 }
 
 #services h3 {
@@ -192,22 +197,23 @@ body {
 
 #services .boxes {
     display: flex;
+    
 }
 
 #services .box{
-    background: #fff;
+    background: $colorpal1;
     flex: 1;
     padding: 48px;
     margin: 0 48px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px #d1d1d1;
+    box-shadow: 2px 2px 5px #00000060;
     font-size: 20px;
 }
 
 #services .box i {
     color: #fff;
     padding: 16px;
-    background: #3693ff;
+    background: $colorpal2;
     border-radius: 50%;
     margin: 0 16px;
     margin-bottom: 32px;

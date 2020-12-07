@@ -87,8 +87,8 @@ body {
 
 /* Showcase Area*/
 #showcase {
-  background: url(img/background.jpg) no-repeat center center/cover;
-  height: 91.7vh;
+  background-image: url(/img/plastic.jpg) no-repeat center center/cover;
+  height: 80vh;
 }
 
 .showcase-content {
@@ -99,13 +99,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   position: absolute;
   top: 81px;
   left: 0;
@@ -116,12 +113,13 @@ body {
 }
 
 .showcase-content h1 {
-  font-size: 64px;
+  font-size: 70px;
   margin-bottom: 32px;
+  float: left;
 }
 
 .showcase-content .btn {
-  font-size: 24px;
+  font-size: 30px;
   padding: 16px 160px;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -145,15 +143,18 @@ body {
 /* Section: About */
 #about {
   padding: 80px 0;
+  background-color: #027373;
 }
 
 #about h2, #services h2 {
+  color: #BACBD9;
   text-align: center;
   font-size: 48px;
   margin-bottom: 48px;
 }
 
 #about h3 {
+  color: #BACBD9;
   font-size: 32px;
   margin-bottom: 16px;
 }
@@ -177,20 +178,20 @@ body {
 
 #about .about-text {
   text-align: justify;
+  color: #BACBD9;
 }
 
 #about .about-image img {
   display: block;
   margin-left: auto;
   width: 75%;
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   margin-top: 60px;
 }
 
 /* Section: Services */
 #services {
   padding: 80px 0;
+  background-color: #60A6A6;
 }
 
 #services h3 {
@@ -206,22 +207,22 @@ body {
 }
 
 #services .box {
-  background: #fff;
+  background: #BACBD9;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 48px;
   margin: 0 48px;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 5px #d1d1d1;
-          box-shadow: 2px 2px 5px #d1d1d1;
+  -webkit-box-shadow: 2px 2px 5px #00000060;
+          box-shadow: 2px 2px 5px #00000060;
   font-size: 20px;
 }
 
 #services .box i {
   color: #fff;
   padding: 16px;
-  background: #3693ff;
+  background: #012840;
   border-radius: 50%;
   margin: 0 16px;
   margin-bottom: 32px;
