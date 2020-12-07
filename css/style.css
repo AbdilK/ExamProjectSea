@@ -29,7 +29,7 @@ body {
 }
 
 .text-primary {
-  color: #3693ff;
+  color: #60A6A6;
 }
 
 .bg-light {
@@ -47,7 +47,7 @@ body {
           justify-content: space-between;
   background: #024959;
   color: #fff;
-  padding: 1.5rem 8rem;
+  padding: 24px 128px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -73,9 +73,9 @@ body {
 #navbar li a {
   text-decoration: none;
   color: #fff;
-  padding: 1rem;
-  font-size: 1,3rem;
-  margin: 0 0,5rem;
+  padding: 16px;
+  font-size: 20px;
+  margin: 0 8px;
   border-radius: 5px;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -116,13 +116,13 @@ body {
 }
 
 .showcase-content h1 {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 64px;
+  margin-bottom: 32px;
 }
 
 .showcase-content .btn {
-  font-size: 1.5rem;
-  padding: 1rem 10rem;
+  font-size: 24px;
+  padding: 16px 160px;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
@@ -136,7 +136,7 @@ body {
   color: #BACBD9;
   text-decoration: none;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   border: 1px solid #BACBD9;
   border-radius: 10px;
   font-weight: bold;
@@ -144,22 +144,22 @@ body {
 
 /* Section: About */
 #about {
-  padding: 5rem 0;
+  padding: 80px 0;
 }
 
 #about h2, #services h2 {
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 3rem;
+  font-size: 48px;
+  margin-bottom: 48px;
 }
 
 #about h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 32px;
+  margin-bottom: 16px;
 }
 
 #about p.lead {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 #about .about-content {
@@ -190,13 +190,13 @@ body {
 
 /* Section: Services */
 #services {
-  padding: 5rem 0;
+  padding: 80px 0;
 }
 
 #services h3 {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  margin-bottom: 32px;
+  font-size: 32px;
 }
 
 #services .boxes {
@@ -210,20 +210,20 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 3rem;
-  margin: 0 3rem;
+  padding: 48px;
+  margin: 0 48px;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 5px #d1d1d1;
           box-shadow: 2px 2px 5px #d1d1d1;
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 
 #services .box i {
   color: #fff;
-  padding: 1rem;
+  padding: 16px;
   background: #3693ff;
   border-radius: 50%;
-  margin: 0 1rem;
-  margin-bottom: 2rem;
+  margin: 0 16px;
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=style.css.map */
