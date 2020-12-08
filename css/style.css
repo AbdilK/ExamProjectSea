@@ -45,7 +45,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #024959;
+  background: white;
   color: #fff;
   padding: 24px 128px;
   position: -webkit-sticky;
@@ -66,13 +66,13 @@ body {
 }
 
 #navbar h2 a {
-  color: #fff;
+  color: fff;
   text-decoration: none;
 }
 
 #navbar li a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   padding: 16px;
   font-size: 20px;
   margin: 0 8px;
@@ -104,7 +104,7 @@ body {
       -ms-flex-align: left;
           align-items: left;
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -142,7 +142,7 @@ body {
 
 /* Section: About */
 #about {
-  padding: 120px 120px;
+  padding: 120px 0px;
   background-color: #027373;
 }
 
