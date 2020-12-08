@@ -184,38 +184,48 @@ body {
 
 /* Section: plastforbrug */
 #plastforbrug {
-    padding: 80px 0;
-    background-color: $colorpal5;
+    padding: 120px 0px;
+    background-color: $colorpal3;
+}
+
+#plastforbrug h2, #plastforbrug h2{
+    color: $colorpal1;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
 }
 
 #plastforbrug h3 {
-    text-align: center;
-    margin-bottom: 32px;
+    color: $colorpal1;
     font-size: 32px;
+    margin-bottom: 16px;
 }
 
-#plastforbrug .boxes {
+#plastforbrug p.lead {
+    margin-bottom: 16px;
+}
+
+#plastforbrug .plastforbrug-content {
     display: flex;
-    
+
 }
 
-#plastforbrug .box{
-    background: $colorpal1;
+#plastforbrug .plastforbrug-text,
+#plastforbrug .plastforbrug-image {
     flex: 1;
-    padding: 48px;
-    margin: 0 48px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #00000060;
-    font-size: 20px;
+} 
+
+#plastforbrug .plastforbrug-text{
+    text-align: justify;
+    color: $colorpal1;
 }
 
-#plastforbrug .box i {
-    color: #fff;
-    padding: 16px;
-    background: $colorpal2;
-    border-radius: 50%;
-    margin: 0 16px;
-    margin-bottom: 32px;
+#plastforbrug .plastforbrug-image img {
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    margin-top: 60px;
+
 }
 
 /* Section: firmaer */
@@ -266,38 +276,48 @@ body {
 
 /* Section: omos */
 #omos {
-    padding: 80px 0;
-    background-color: $colorpal5;
+    padding: 120px 0px;
+    background-color: $colorpal3;
+}
+
+#omos h2, #omos h2{
+    color: $colorpal1;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
 }
 
 #omos h3 {
-    text-align: center;
-    margin-bottom: 32px;
+    color: $colorpal1;
     font-size: 32px;
+    margin-bottom: 16px;
 }
 
-#omos .boxes {
+#omos p.lead {
+    margin-bottom: 16px;
+}
+
+#omos .omos-content {
     display: flex;
-    
+
 }
 
-#omos .box{
-    background: $colorpal1;
+#omos .omos-text,
+#omos .omos-image {
     flex: 1;
-    padding: 48px;
-    margin: 0 48px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #00000060;
-    font-size: 20px;
+} 
+
+#omos .omos-text{
+    text-align: justify;
+    color: $colorpal1;
 }
 
-#omos .box i {
-    color: #fff;
-    padding: 16px;
-    background: $colorpal2;
-    border-radius: 50%;
-    margin: 0 16px;
-    margin-bottom: 32px;
+#omos .omos-image img {
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    margin-top: 60px;
+
 }
 
 /* Section: stot */

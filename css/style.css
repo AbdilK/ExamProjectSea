@@ -190,42 +190,50 @@ body {
 
 /* Section: plastforbrug */
 #plastforbrug {
-  padding: 80px 0;
-  background-color: #60A6A6;
+  padding: 120px 0px;
+  background-color: #024959;
+}
+
+#plastforbrug h2, #plastforbrug h2 {
+  color: #BACBD9;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 48px;
 }
 
 #plastforbrug h3 {
-  text-align: center;
-  margin-bottom: 32px;
+  color: #BACBD9;
   font-size: 32px;
+  margin-bottom: 16px;
 }
 
-#plastforbrug .boxes {
+#plastforbrug p.lead {
+  margin-bottom: 16px;
+}
+
+#plastforbrug .plastforbrug-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#plastforbrug .box {
-  background: #BACBD9;
+#plastforbrug .plastforbrug-text,
+#plastforbrug .plastforbrug-image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 48px;
-  margin: 0 48px;
-  border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 5px #00000060;
-          box-shadow: 2px 2px 5px #00000060;
-  font-size: 20px;
 }
 
-#plastforbrug .box i {
-  color: #fff;
-  padding: 16px;
-  background: #012840;
-  border-radius: 50%;
-  margin: 0 16px;
-  margin-bottom: 32px;
+#plastforbrug .plastforbrug-text {
+  text-align: justify;
+  color: #BACBD9;
+}
+
+#plastforbrug .plastforbrug-image img {
+  display: block;
+  margin-left: auto;
+  width: 75%;
+  margin-top: 60px;
 }
 
 /* Section: firmaer */
@@ -278,42 +286,50 @@ body {
 
 /* Section: omos */
 #omos {
-  padding: 80px 0;
-  background-color: #60A6A6;
+  padding: 120px 0px;
+  background-color: #024959;
+}
+
+#omos h2, #omos h2 {
+  color: #BACBD9;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 48px;
 }
 
 #omos h3 {
-  text-align: center;
-  margin-bottom: 32px;
+  color: #BACBD9;
   font-size: 32px;
+  margin-bottom: 16px;
 }
 
-#omos .boxes {
+#omos p.lead {
+  margin-bottom: 16px;
+}
+
+#omos .omos-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#omos .box {
-  background: #BACBD9;
+#omos .omos-text,
+#omos .omos-image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 48px;
-  margin: 0 48px;
-  border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 5px #00000060;
-          box-shadow: 2px 2px 5px #00000060;
-  font-size: 20px;
 }
 
-#omos .box i {
-  color: #fff;
-  padding: 16px;
-  background: #012840;
-  border-radius: 50%;
-  margin: 0 16px;
-  margin-bottom: 32px;
+#omos .omos-text {
+  text-align: justify;
+  color: #BACBD9;
+}
+
+#omos .omos-image img {
+  display: block;
+  margin-left: auto;
+  width: 75%;
+  margin-top: 60px;
 }
 
 /* Section: stot */
