@@ -155,32 +155,38 @@ body {
     margin-bottom: 16px;
 }
 
-#fakta p.lead {
-    margin-bottom: 16px;
-}
 
 #fakta .fakta-content {
     display: flex;
 
 }
 
-#fakta .fakta-text,
-#fakta .fakta-image {
-    flex: 1;
-} 
+#first {
+    clip-path: circle(31.8% at 50% 50%);
+    display: inline;
+}
 
-#fakta .fakta-text{
-    text-align: justify;
+#firstInfo {
+    float: right;
+    text-align: right;
     color: $colorpal1;
+    font-size: 30px;
+    margin-bottom: 48px;
 }
 
-#fakta .fakta-image img {
-    display: block;
-    margin-left: auto;
-    width: 75%;
-    margin-top: 60px;
-
+#second {
+    clip-path: circle(31.8% at 50% 50%);
+    display: inline;
 }
+
+#secondInfo {
+    float: left;
+    text-align: left;
+    color: $colorpal1;
+    font-size: 30px;
+}
+
+
 
 /* Section: plastforbrug */
 #plastforbrug {
@@ -335,9 +341,43 @@ body {
 
 #stot h3 {
     color: $colorpal1;
+    text-align: center;
     font-size: 32px;
     margin-bottom: 16px;
 }
+#text {
+    text-align: center;
+}
+i {
+    color: $colorpal2;
+}
+
+.donateBbtn {
+    font-size: 30px;
+    padding: 16px 160px;  
+    transition: color 0.3s,
+}
+
+.donateBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 50px;
+    color: $colorpal1;
+    text-decoration: none;
+    padding: 16px 32px;
+    border: 1px solid $colorpal1;
+    border-radius: 10px;
+    font-weight: bold;
+    align-items: center;
+    
+}
+.donateBtn:hover {
+    background: $colorpal5;
+    color: #fff;
+}
+
 
 #stot p.lead {
     margin-bottom: 16px;

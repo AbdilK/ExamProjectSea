@@ -159,33 +159,37 @@ body {
   margin-bottom: 16px;
 }
 
-#fakta p.lead {
-  margin-bottom: 16px;
-}
-
 #fakta .fakta-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#fakta .fakta-text,
-#fakta .fakta-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+#first {
+  -webkit-clip-path: circle(31.8% at 50% 50%);
+          clip-path: circle(31.8% at 50% 50%);
+  display: inline;
 }
 
-#fakta .fakta-text {
-  text-align: justify;
+#firstInfo {
+  float: right;
+  text-align: right;
   color: #BACBD9;
+  font-size: 30px;
+  margin-bottom: 48px;
 }
 
-#fakta .fakta-image img {
-  display: block;
-  margin-left: auto;
-  width: 75%;
-  margin-top: 60px;
+#second {
+  -webkit-clip-path: circle(31.8% at 50% 50%);
+          clip-path: circle(31.8% at 50% 50%);
+  display: inline;
+}
+
+#secondInfo {
+  float: left;
+  text-align: left;
+  color: #BACBD9;
+  font-size: 30px;
 }
 
 /* Section: plastforbrug */
@@ -347,8 +351,50 @@ body {
 
 #stot h3 {
   color: #BACBD9;
+  text-align: center;
   font-size: 32px;
   margin-bottom: 16px;
+}
+
+#text {
+  text-align: center;
+}
+
+i {
+  color: #012840;
+}
+
+.donateBbtn {
+  font-size: 30px;
+  padding: 16px 160px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.donateBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 50px;
+  color: #BACBD9;
+  text-decoration: none;
+  padding: 16px 32px;
+  border: 1px solid #BACBD9;
+  border-radius: 10px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.donateBtn:hover {
+  background: #60A6A6;
+  color: #fff;
 }
 
 #stot p.lead {
