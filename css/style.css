@@ -140,73 +140,73 @@ body {
   font-weight: bold;
 }
 
-/* Section: About */
-#about {
+/* Section: fakta */
+#fakta {
   padding: 120px 0px;
   background-color: #027373;
 }
 
-#about h2, #services h2 {
+#fakta h2, #fakta h2 {
   color: #BACBD9;
   text-align: center;
   font-size: 48px;
   margin-bottom: 48px;
 }
 
-#about h3 {
+#fakta h3 {
   color: #BACBD9;
   font-size: 32px;
   margin-bottom: 16px;
 }
 
-#about p.lead {
+#fakta p.lead {
   margin-bottom: 16px;
 }
 
-#about .about-content {
+#fakta .fakta-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#about .about-text,
-#about .about-image {
+#fakta .fakta-text,
+#fakta .fakta-image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-#about .about-text {
+#fakta .fakta-text {
   text-align: justify;
   color: #BACBD9;
 }
 
-#about .about-image img {
+#fakta .fakta-image img {
   display: block;
   margin-left: auto;
   width: 75%;
   margin-top: 60px;
 }
 
-/* Section: Services */
-#services {
+/* Section: plastforbrug */
+#plastforbrug {
   padding: 80px 0;
   background-color: #60A6A6;
 }
 
-#services h3 {
+#plastforbrug h3 {
   text-align: center;
   margin-bottom: 32px;
   font-size: 32px;
 }
 
-#services .boxes {
+#plastforbrug .boxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#services .box {
+#plastforbrug .box {
   background: #BACBD9;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -219,12 +219,148 @@ body {
   font-size: 20px;
 }
 
-#services .box i {
+#plastforbrug .box i {
   color: #fff;
   padding: 16px;
   background: #012840;
   border-radius: 50%;
   margin: 0 16px;
   margin-bottom: 32px;
+}
+
+/* Section: firmaer */
+#firmaer {
+  padding: 120px 0px;
+  background-color: #027373;
+}
+
+#firmaer h2, #firmaer h2 {
+  color: #BACBD9;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+
+#firmaer h3 {
+  color: #BACBD9;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+#firmaer p.lead {
+  margin-bottom: 16px;
+}
+
+#firmaer .firmaer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#firmaer .firmaer-text,
+#firmaer .firmaer-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#firmaer .firmaer-text {
+  text-align: justify;
+  color: #BACBD9;
+}
+
+#firmaer .firmaer-image img {
+  display: block;
+  margin-left: auto;
+  width: 75%;
+  margin-top: 60px;
+}
+
+/* Section: omos */
+#omos {
+  padding: 80px 0;
+  background-color: #60A6A6;
+}
+
+#omos h3 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+
+#omos .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#omos .box {
+  background: #BACBD9;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 48px;
+  margin: 0 48px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px #00000060;
+          box-shadow: 2px 2px 5px #00000060;
+  font-size: 20px;
+}
+
+#omos .box i {
+  color: #fff;
+  padding: 16px;
+  background: #012840;
+  border-radius: 50%;
+  margin: 0 16px;
+  margin-bottom: 32px;
+}
+
+/* Section: stot */
+#stot {
+  padding: 120px 0px;
+  background-color: #027373;
+}
+
+#stot h2, #stot h2 {
+  color: #BACBD9;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+
+#stot h3 {
+  color: #BACBD9;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+#stot p.lead {
+  margin-bottom: 16px;
+}
+
+#stot .stot-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#stot .stot-text,
+#stot .stot-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#stot .stot-text {
+  text-align: justify;
+  color: #BACBD9;
+}
+
+#stot .stot-image img {
+  display: block;
+  margin-left: auto;
+  width: 75%;
+  margin-top: 60px;
 }
 /*# sourceMappingURL=style.css.map */
