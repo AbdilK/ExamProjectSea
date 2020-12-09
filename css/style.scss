@@ -1,5 +1,4 @@
-/* Color palette*/
-
+/** Color palette **/
 $colorpal1: #BACBD9;
 $colorpal2: #012840;
 $colorpal3: #024959;
@@ -7,406 +6,507 @@ $colorpal4: #027373;
 $colorpal5: #60A6A6;
 
 
-/* General styling*/
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: halyard-display,sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: halyard-display, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
-@media screen and (max-width: 600px) {
-    #navbar {
-      float: none;
-      width: 100%;
-    }
-  }
-
-
-body {
-    line-height: 1.4;
-    color: #333;
-    overflow-x: hidden;
-    font-family: halyard-display,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+ul{
+    list-style-type: none;
 }
 
-/* Ulitily classes */ 
-.container {
-    max-width: 1100px;
-    margin: auto;
+a{
+    color:inherit;
+    cursor: pointer;
+    text-decoration: none;
 }
-
-.text-primary {
-    color: $colorpal5;
-}
-
-.bg-light {
-    background: #f4f4f4;
-    color: $colorpal3;
-}
-
-/* Navbar */
-#navbar {
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     justify-content: space-between;
-    background: white;
-    color: #fff;
-    padding: 24px 128px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    border-bottom: 3px solid $colorpal5;
-}   
-
-#navbar ul {
-    display: flex;
     align-items: center;
-    list-style: none;
+    color: $colorpal3;
+    padding: 35px 100px 0;
+
 }
 
-#navbar h2 a {
-    color: fff;
-    text-decoration: none;
+header h2 a {
+    text-transform: uppercase;
+    font-weight: 900;
+
 }
 
-#navbar li a {
-    text-decoration: none;
-    color: black;
-    padding: 16px;
-    font-size: 20px;
-    margin: 0 8px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}   
-
-#navbar li a:hover {
-    background-color: $colorpal5;
-} 
-
-/* Showcase Area*/
-#showcase {
-    background-image: url(/img/plastic.jpg) no-repeat center center/cover;
-    height: 80vh;
-    
+header .nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 }
 
-.showcase-content {
+header .nav li {
+    margin: 0 15px;
+
+}
+
+header .nav li:first-child{
+    margin-left: 0;
+}
+
+header .nav li:first-child{
+    margin-right: 0;
+}
+
+@media(max-width: 1000px){
+    header {
+        padding: 20px 50px;
+
+    }
+    header .nav li a {
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 700px) {
+    header{
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
+    header .nav li {
+        margin: 0 7px;
+    }
+}
+
+section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    align-items: left;
-    position: absolute;
-    top: 120px;
-    left:0;
-    bottom: 0;
-    right: 0;
-    background: url(https://www.blindtreasures.com/wp-content/uploads/2019/10/ocean-pollution-solutions.jpg) no-repeat center center/cover;
+    align-items: center;
+    padding: 110px 100px;
     color: #fff;
+
+}
+@media (max-width: 1000px){
+    section {
+        padding: 100px 50px;
+    }
 }
 
-.showcase-content h1 {
-    font-size: 70px;
-    margin-bottom: 32px;
-    float: left;
+@media (max-width: 600px) {
+    section {
+        padding: 125px 30px;
+    }
 }
 
-.showcase-content .btn {
-    font-size: 30px;
-    padding: 16px 160px;  
-    transition: color 0.3s,
-}
-
-.showcase-content .btn:hover {
-    background: $colorpal5;
-    color: #fff;
-}
-
-.btn {
-    color: $colorpal1;
-    text-decoration: none;
-    display: inline-block;
-    padding: 16px 32px;
-    border: 1px solid $colorpal1;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-/* Section: fakta */
-#fakta {
-    padding: 120px 0px;
-    background-color: $colorpal4;
-}
-
-#fakta h2, #fakta h2{
-    color: $colorpal1;
+section p{
+    max-width: 800px;
     text-align: center;
-    font-size: 48px;
-    margin-bottom: 48px;
-}
-
-#fakta h3 {
-    color: $colorpal1;
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-
-
-#fakta .fakta-content {
-    display: flex;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
 
 }
 
-#first {
-    clip-path: circle(31.8% at 50% 50%);
-    display: inline;
-}
-
-#firstInfo {
-    float: right;
-    text-align: right;
-    color: $colorpal1;
-    font-size: 30px;
-    margin-bottom: 48px;
-}
-
-#second {
-    clip-path: circle(31.8% at 50% 50%);
-    display: inline;
-}
-
-#secondInfo {
-    float: left;
-    text-align: left;
-    color: $colorpal1;
-    font-size: 30px;
-}
-
-
-
-/* Section: plastforbrug */
-#plastforbrug {
-    padding: 120px 0px;
-    background-color: $colorpal3;
-}
-
-#plastforbrug h2, #plastforbrug h2{
-    color: $colorpal1;
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 48px;
-}
-
-#plastforbrug h3 {
-    color: $colorpal1;
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-
-#plastforbrug p.lead {
-    margin-bottom: 16px;
-}
-
-#plastforbrug .plastforbrug-content {
-    display: flex;
-
-}
-
-#plastforbrug .plastforbrug-text,
-#plastforbrug .plastforbrug-image {
-    flex: 1;
-} 
-
-#plastforbrug .plastforbrug-text{
-    text-align: justify;
-    color: $colorpal1;
-}
-
-#plastforbrug .plastforbrug-image img {
-    display: block;
-    margin-left: auto;
-    width: 75%;
-    margin-top: 60px;
-
-}
-
-/* Section: firmaer */
-#firmaer {
-    padding: 120px 0px;
-    background-color: $colorpal4;
-}
-
-#firmaer h2, #firmaer h2{
-    color: $colorpal1;
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 48px;
-}
-
-#firmaer h3 {
-    color: $colorpal1;
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-
-#firmaer p.lead {
-    margin-bottom: 16px;
-}
-
-#firmaer .firmaer-content {
-    display: flex;
-
-}
-
-#firmaer .firmaer-text,
-#firmaer .firmaer-image {
-    flex: 1;
-} 
-
-#firmaer .firmaer-text{
-    text-align: justify;
-    color: $colorpal1;
-}
-
-#firmaer .firmaer-image img {
-    display: block;
-    margin-left: auto;
-    width: 75%;
-    margin-top: 60px;
-
-}
-
-/* Section: omos */
-#omos {
-    padding: 120px 0px;
-    background-color: $colorpal3;
-}
-
-#omos h2, #omos h2{
-    color: $colorpal1;
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 48px;
-}
-
-#omos h3 {
-    color: $colorpal1;
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-
-#omos p.lead {
-    margin-bottom: 16px;
-}
-
-#omos .omos-content {
-    display: flex;
-
-}
-
-#omos .omos-text,
-#omos .omos-image {
-    flex: 1;
-} 
-
-#omos .omos-text{
-    text-align: justify;
-    color: $colorpal1;
-}
-
-#omos .omos-image img {
-    display: block;
-    margin-left: auto;
-    width: 75%;
-    margin-top: 60px;
-
-}
-
-/* Section: stot */
-#stot {
-    padding: 120px 0px;
-    background-color: $colorpal4;
-}
-
-#stot h2, #stot h2{
-    color: $colorpal1;
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 48px;
-}
-
-#stot h3 {
-    color: $colorpal1;
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-#text {
-    text-align: center;
-}
-i {
-    color: $colorpal2;
-}
-
-.donateBbtn {
-    font-size: 30px;
-    padding: 16px 160px;  
-    transition: color 0.3s,
-}
-
-.donateBtn {
-    display: flex;
+.banner-area {
+    position: relative;
     justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 50px;
-    color: $colorpal1;
-    text-decoration: none;
-    padding: 16px 32px;
-    border: 1px solid $colorpal1;
-    border-radius: 10px;
-    font-weight: bold;
-    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+
+}
+.banner-area .banner-img {
+    background-image: url(https://www.blindtreasures.com/wp-content/uploads/2019/10/ocean-pollution-solutions.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -1;
+
+}
+
+.banner-area h1{
+    margin-bottom: 15px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.banner-area h3{
+    font-size: 70px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .banner-area {
+        min-height: 600px;
+    }
+
+    .banner-area h1{
+        font-size: 27px;
+        
+    }
+    .banner-area h3{
+        font-size: 20px;
+        
+    }
+}
+
+
+#fakta {
+    background: $colorpal3;
+}
+
+ul.fakta-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
-.donateBtn:hover {
-    background: $colorpal5;
-    color: #fff;
+
+.fakta-left {
+    flex-basis: 40%;
+    text-align: center;
+
 }
 
+.fakta-right {
+    flex-basis: 60%;
+}
+.fakta-area p{
+    max-width: 800px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
 
-#stot p.lead {
-    margin-bottom: 16px;
+}
+.fakta-right a{
+    background: #fff;
+    padding: 15px 30px;
+    color: $colorpal3;
+
 }
 
-#stot .stot-content {
+.section-title {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 1000px)
+{
+    .section-title {
+        font-size: 35px;
+    }
+
+    .fakta-left,
+    .fakta-right{
+        flex-basis: 100%;
+    }
+    .fakta-content {
+        padding: 8px;
+    }
+}
+
+#plastforbrug {
+    background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url(https://ec.europa.eu/jrc/sites/jrcsh/files/styles/normal-responsive/public/environmental_protection_concept._plastic_bag_pollution_in_ocean_c_adobestock_by_memorystockphoto_213066248.jpeg?itok=tp-SSHtm);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+ul.plastforbrug-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plastforbrug-content li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+
+}
+.plastforbrug-content li h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.plastforbrug-content li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .plastforbrug-content li {
+        flex-basis: 100%;
+        margin-bottom: 65px;
+
+    }
+
+    .plastforbrug.content li:lastchild{
+        margin-bottom: 0;
+    }
+
+    .plastforbrug.content li p {
+        padding: 0;
+    }
+}
+
+#firmaer {
+    background: $colorpal3;
+}
+
+ul.firmaer-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.firmaer-left {
+    flex-basis: 40%;
+    text-align: center;
 
 }
 
-#stot .stot-text,
-#stot .stot-image {
-    flex: 1;
-} 
+.firmaer-right {
+    flex-basis: 60%;
+}
+.firmaer-area p{
+    max-width: 800px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
 
-#stot .stot-text{
-    text-align: justify;
-    color: $colorpal1;
+}
+.firmaer-right a{
+    background: #fff;
+    padding: 15px 30px;
+    color: $colorpal3;
+
 }
 
-#stot .stot-image img {
-    display: block;
-    margin-left: auto;
-    width: 75%;
-    margin-top: 60px;
+.section-title {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 5%;
+}
 
+@media (max-width: 1000px)
+{
+    .section-title {
+        font-size: 35px;
+    }
+
+    .firmaer-left,
+    .firmaer-right{
+        flex-basis: 100%;
+    }
+    .firmaer-content {
+        padding: 8px;
+    }
+}
+
+
+#omos .section-title{
+    color: #262626;
+
+}
+
+.img-area{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.single-img{
+    padding: 0 20px 20px;
+
+}
+
+.single-img img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+
+
+
+#stot {
+    background: $colorpal3;
+}
+
+ul.stot-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.stot-left {
+    flex-basis: 40%;
+    text-align: center;
+
+}
+
+.stot-right {
+    flex-basis: 60%;
+}
+.stot-area p{
+    max-width: 800px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+
+}
+.stot-right a{
+    background: #fff;
+    padding: 15px 30px;
+    color: $colorpal3;
+
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 1000px)
+{
+    .section-title {
+        font-size: 35px;
+    }
+
+    .stot-left,
+    .stot-right{
+        flex-basis: 100%;
+    }
+    .stot-content {
+        padding: 8px;
+    }
+}
+
+#kontakt {
+    background: $colorpal4;
+
+}
+
+ul.kontakt-content {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kontakt-content li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.kontakt-content li i {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.kontakt-content li p {
+    margin: 0;
+
+}
+
+@media (max-width: 1000px) {
+    .kontakt-content li {
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
+
+    .kontakt-content li:last-child{
+        margin-bottom: 0;
+    }
+    
+    .kontakt-content li p {
+        padding: 0;
+    }
+}
+
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #262626;
+    padding: 60px 0;
 }

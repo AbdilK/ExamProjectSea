@@ -1,102 +1,107 @@
-/* Color palette*/
-/* General styling*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/** Color palette **/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: halyard-display,sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-@media screen and (max-width: 600px) {
-  #navbar {
-    float: none;
-    width: 100%;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  line-height: 1.4;
-  color: #333;
-  overflow-x: hidden;
-  font-family: halyard-display,sans-serif;
+  font-family: halyard-display, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Ulitily classes */
-.container {
-  max-width: 1100px;
-  margin: auto;
+ul {
+  list-style-type: none;
 }
 
-.text-primary {
-  color: #60A6A6;
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.bg-light {
-  background: #f4f4f4;
-  color: #024959;
-}
-
-/* Navbar */
-#navbar {
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: white;
-  color: #fff;
-  padding: 24px 128px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  border-bottom: 3px solid #60A6A6;
-}
-
-#navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style: none;
+  color: #024959;
+  padding: 35px 100px 0;
 }
 
-#navbar h2 a {
-  color: fff;
-  text-decoration: none;
+header h2 a {
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
-#navbar li a {
-  text-decoration: none;
-  color: black;
-  padding: 16px;
-  font-size: 20px;
-  margin: 0 8px;
-  border-radius: 5px;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+header .nav {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#navbar li a:hover {
-  background-color: #60A6A6;
+header .nav li {
+  margin: 0 15px;
 }
 
-/* Showcase Area*/
-#showcase {
-  background-image: url(/img/plastic.jpg) no-repeat center center/cover;
-  height: 80vh;
+header .nav li:first-child {
+  margin-left: 0;
 }
 
-.showcase-content {
+header .nav li:first-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 20px 50px;
+  }
+  header .nav li a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header h2 {
+    margin-bottom: 15px;
+  }
+  header .nav li {
+    margin: 0 7px;
+  }
+}
+
+section {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,330 +109,431 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  position: absolute;
-  top: 120px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: url(https://www.blindtreasures.com/wp-content/uploads/2019/10/ocean-pollution-solutions.jpg) no-repeat center center/cover;
-  color: #fff;
-}
-
-.showcase-content h1 {
-  font-size: 70px;
-  margin-bottom: 32px;
-  float: left;
-}
-
-.showcase-content .btn {
-  font-size: 30px;
-  padding: 16px 160px;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.showcase-content .btn:hover {
-  background: #60A6A6;
-  color: #fff;
-}
-
-.btn {
-  color: #BACBD9;
-  text-decoration: none;
-  display: inline-block;
-  padding: 16px 32px;
-  border: 1px solid #BACBD9;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-/* Section: fakta */
-#fakta {
-  padding: 120px 0px;
-  background-color: #027373;
-}
-
-#fakta h2, #fakta h2 {
-  color: #BACBD9;
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 48px;
-}
-
-#fakta h3 {
-  color: #BACBD9;
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-#fakta .fakta-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#first {
-  -webkit-clip-path: circle(31.8% at 50% 50%);
-          clip-path: circle(31.8% at 50% 50%);
-  display: inline;
-}
-
-#firstInfo {
-  float: right;
-  text-align: right;
-  color: #BACBD9;
-  font-size: 30px;
-  margin-bottom: 48px;
-}
-
-#second {
-  -webkit-clip-path: circle(31.8% at 50% 50%);
-          clip-path: circle(31.8% at 50% 50%);
-  display: inline;
-}
-
-#secondInfo {
-  float: left;
-  text-align: left;
-  color: #BACBD9;
-  font-size: 30px;
-}
-
-/* Section: plastforbrug */
-#plastforbrug {
-  padding: 120px 0px;
-  background-color: #024959;
-}
-
-#plastforbrug h2, #plastforbrug h2 {
-  color: #BACBD9;
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 48px;
-}
-
-#plastforbrug h3 {
-  color: #BACBD9;
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-#plastforbrug p.lead {
-  margin-bottom: 16px;
-}
-
-#plastforbrug .plastforbrug-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#plastforbrug .plastforbrug-text,
-#plastforbrug .plastforbrug-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#plastforbrug .plastforbrug-text {
-  text-align: justify;
-  color: #BACBD9;
-}
-
-#plastforbrug .plastforbrug-image img {
-  display: block;
-  margin-left: auto;
-  width: 75%;
-  margin-top: 60px;
-}
-
-/* Section: firmaer */
-#firmaer {
-  padding: 120px 0px;
-  background-color: #027373;
-}
-
-#firmaer h2, #firmaer h2 {
-  color: #BACBD9;
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 48px;
-}
-
-#firmaer h3 {
-  color: #BACBD9;
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-#firmaer p.lead {
-  margin-bottom: 16px;
-}
-
-#firmaer .firmaer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#firmaer .firmaer-text,
-#firmaer .firmaer-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#firmaer .firmaer-text {
-  text-align: justify;
-  color: #BACBD9;
-}
-
-#firmaer .firmaer-image img {
-  display: block;
-  margin-left: auto;
-  width: 75%;
-  margin-top: 60px;
-}
-
-/* Section: omos */
-#omos {
-  padding: 120px 0px;
-  background-color: #024959;
-}
-
-#omos h2, #omos h2 {
-  color: #BACBD9;
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 48px;
-}
-
-#omos h3 {
-  color: #BACBD9;
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-#omos p.lead {
-  margin-bottom: 16px;
-}
-
-#omos .omos-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#omos .omos-text,
-#omos .omos-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#omos .omos-text {
-  text-align: justify;
-  color: #BACBD9;
-}
-
-#omos .omos-image img {
-  display: block;
-  margin-left: auto;
-  width: 75%;
-  margin-top: 60px;
-}
-
-/* Section: stot */
-#stot {
-  padding: 120px 0px;
-  background-color: #027373;
-}
-
-#stot h2, #stot h2 {
-  color: #BACBD9;
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 48px;
-}
-
-#stot h3 {
-  color: #BACBD9;
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-#text {
-  text-align: center;
-}
-
-i {
-  color: #012840;
-}
-
-.donateBbtn {
-  font-size: 30px;
-  padding: 16px 160px;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.donateBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
-  width: 50px;
-  color: #BACBD9;
-  text-decoration: none;
-  padding: 16px 32px;
-  border: 1px solid #BACBD9;
-  border-radius: 10px;
-  font-weight: bold;
-  align-items: center;
-}
-
-.donateBtn:hover {
-  background: #60A6A6;
+  padding: 110px 100px;
   color: #fff;
 }
 
-#stot p.lead {
-  margin-bottom: 16px;
+@media (max-width: 1000px) {
+  section {
+    padding: 100px 50px;
+  }
 }
 
-#stot .stot-content {
+@media (max-width: 600px) {
+  section {
+    padding: 125px 30px;
+  }
+}
+
+section p {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 2;
+}
+
+.banner-area {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-area .banner-img {
+  background-image: url(https://www.blindtreasures.com/wp-content/uploads/2019/10/ocean-pollution-solutions.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.banner-area h1 {
+  margin-bottom: 15px;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.banner-area h3 {
+  font-size: 70px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .banner-area {
+    min-height: 600px;
+  }
+  .banner-area h1 {
+    font-size: 27px;
+  }
+  .banner-area h3 {
+    font-size: 20px;
+  }
+}
+
+#fakta {
+  background: #024959;
+}
+
+ul.fakta-content {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#stot .stot-text,
-#stot .stot-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.fakta-left {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: center;
 }
 
-#stot .stot-text {
-  text-align: justify;
-  color: #BACBD9;
+.fakta-right {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
 
-#stot .stot-image img {
-  display: block;
-  margin-left: auto;
-  width: 75%;
-  margin-top: 60px;
+.fakta-area p {
+  max-width: 800px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 0;
+}
+
+.fakta-right a {
+  background: #fff;
+  padding: 15px 30px;
+  color: #024959;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+  .section-title {
+    font-size: 35px;
+  }
+  .fakta-left,
+  .fakta-right {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .fakta-content {
+    padding: 8px;
+  }
+}
+
+#plastforbrug {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://ec.europa.eu/jrc/sites/jrcsh/files/styles/normal-responsive/public/environmental_protection_concept._plastic_bag_pollution_in_ocean_c_adobestock_by_memorystockphoto_213066248.jpeg?itok=tp-SSHtm);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://ec.europa.eu/jrc/sites/jrcsh/files/styles/normal-responsive/public/environmental_protection_concept._plastic_bag_pollution_in_ocean_c_adobestock_by_memorystockphoto_213066248.jpeg?itok=tp-SSHtm);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+ul.plastforbrug-content {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plastforbrug-content li {
+  padding: 0 30px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+.plastforbrug-content li h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.plastforbrug-content li p {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .plastforbrug-content li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 65px;
+  }
+  .plastforbrug.content li:lastchild {
+    margin-bottom: 0;
+  }
+  .plastforbrug.content li p {
+    padding: 0;
+  }
+}
+
+#firmaer {
+  background: #024959;
+}
+
+ul.firmaer-content {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.firmaer-left {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: center;
+}
+
+.firmaer-right {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.firmaer-area p {
+  max-width: 800px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 0;
+}
+
+.firmaer-right a {
+  background: #fff;
+  padding: 15px 30px;
+  color: #024959;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+  .section-title {
+    font-size: 35px;
+  }
+  .firmaer-left,
+  .firmaer-right {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .firmaer-content {
+    padding: 8px;
+  }
+}
+
+#omos .section-title {
+  color: #262626;
+}
+
+.img-area {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.single-img {
+  padding: 0 20px 20px;
+}
+
+.single-img img:hover {
+  opacity: .5;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+#stot {
+  background: #024959;
+}
+
+ul.stot-content {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stot-left {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: center;
+}
+
+.stot-right {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.stot-area p {
+  max-width: 800px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 0;
+}
+
+.stot-right a {
+  background: #fff;
+  padding: 15px 30px;
+  color: #024959;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+  .section-title {
+    font-size: 35px;
+  }
+  .stot-left,
+  .stot-right {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .stot-content {
+    padding: 8px;
+  }
+}
+
+#kontakt {
+  background: #027373;
+}
+
+ul.kontakt-content {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kontakt-content li {
+  padding: 0 30px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+.kontakt-content li i {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.kontakt-content li p {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .kontakt-content li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 65px;
+  }
+  .kontakt-content li:last-child {
+    margin-bottom: 0;
+  }
+  .kontakt-content li p {
+    padding: 0;
+  }
+}
+
+footer {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #262626;
+  padding: 60px 0;
 }
 /*# sourceMappingURL=style.css.map */
