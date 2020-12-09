@@ -77,6 +77,10 @@ header .menu{
 }
 
 @media(max-width:1000px){
+
+    header {
+        position: fixed;
+    }
     
     header ul{
         position: fixed;
@@ -512,3 +516,4 @@ footer {
     background-color: #262626;
     padding: 60px 0;
 }
+
