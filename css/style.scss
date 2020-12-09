@@ -217,18 +217,13 @@ ul.fakta-content{
     padding-left: 0;
 
 }
-.fakta-right a{
-    background: #fff;
-    padding: 15px 30px;
-    color: $colorpal3;
-
-}
 
 .section-title {
     text-transform: uppercase;
     font-size: 35px;
     margin-bottom: 5%;
 }
+
 
 @media (max-width: 1000px)
 {
@@ -313,27 +308,26 @@ ul.firmaer-content{
     
 }
 
-.firmaer-left {
-    flex-basis: 40%;
+.firmaer {
+    
     text-align: center;
 
 }
 
-.firmaer-right {
-    flex-basis: 60%;
+.firmaer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 20px;
 }
+
 .firmaer-area p{
     max-width: 800px;
     margin-bottom: 25px;
     line-height: 1.5;
     text-align: left;
     padding-left: 0;
-
-}
-.firmaer-right a{
-    background: #fff;
-    padding: 15px 30px;
-    color: $colorpal3;
 
 }
 
@@ -349,8 +343,7 @@ ul.firmaer-content{
         font-size: 35px;
     }
 
-    .firmaer-left,
-    .firmaer-right{
+    .firmaer{
         flex-basis: 100%;
     }
     .firmaer-content {
@@ -405,15 +398,11 @@ ul.stot-content{
     
 }
 
-.stot-left {
-    flex-basis: 40%;
+.stot {
     text-align: center;
 
 }
 
-.stot-right {
-    flex-basis: 60%;
-}
 .stot-area p{
     max-width: 800px;
     margin-bottom: 25px;

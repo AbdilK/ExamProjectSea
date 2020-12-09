@@ -222,12 +222,6 @@ ul.fakta-content {
   padding-left: 0;
 }
 
-.fakta-right a {
-  background: #fff;
-  padding: 15px 30px;
-  color: #024959;
-}
-
 .section-title {
   text-transform: uppercase;
   font-size: 35px;
@@ -323,15 +317,16 @@ ul.firmaer-content {
           justify-content: center;
 }
 
-.firmaer-left {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+.firmaer {
   text-align: center;
 }
 
-.firmaer-right {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+.firmaer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .firmaer-area p {
@@ -340,12 +335,6 @@ ul.firmaer-content {
   line-height: 1.5;
   text-align: left;
   padding-left: 0;
-}
-
-.firmaer-right a {
-  background: #fff;
-  padding: 15px 30px;
-  color: #024959;
 }
 
 .section-title {
@@ -358,8 +347,7 @@ ul.firmaer-content {
   .section-title {
     font-size: 35px;
   }
-  .firmaer-left,
-  .firmaer-right {
+  .firmaer {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -422,15 +410,8 @@ ul.stot-content {
           justify-content: center;
 }
 
-.stot-left {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+.stot {
   text-align: center;
-}
-
-.stot-right {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
 }
 
 .stot-area p {
