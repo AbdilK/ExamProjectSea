@@ -33,6 +33,11 @@ a{
     text-decoration: none;
 }
 
+#overskrift {
+    color: $colorpal1;
+   
+}
+
 header{
     width:100%;
     height: 100px;
@@ -455,6 +460,8 @@ ul.stot-content{
         padding: 8px;
     }
 }
+
+
 
 #kontakt {
     background: $colorpal4;
