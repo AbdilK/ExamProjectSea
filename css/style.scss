@@ -42,14 +42,13 @@ header{
     position: fixed;
     z-index: 99;
     box-shadow: 0 0 10px #000;
-    background-color: $colorpal1;
+    background-color: white;
 }
 #chk1{
     display: none;
 }
 header .logo{
     flex: 1;
-    color:#fff;
     text-shadow: 0 0 2px #000;
     margin-left: 50px;
 }
@@ -64,7 +63,7 @@ header ul li{
 }
 header ul li a{
     text-decoration: none;
-    color:#fff;
+    color: $colorpal3;
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 15px;
@@ -199,10 +198,16 @@ section p{
 
 
 #fakta {
-    background: $colorpal3;
-    
+    background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
+#clip {
+    clip-path: circle(27.9% at 50% 50%);
+}
 ul.fakta-content{
     width: 100%;
     display: -webkit-flex;
@@ -212,46 +217,39 @@ ul.fakta-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
-.fakta-left {
-    flex-basis: 40%;
+.fakta-content li {
+    padding: 0 30px;
+    flex-basis: 33%;
     text-align: center;
 
 }
-
-.fakta-right {
-    flex-basis: 60%;
-}
-.fakta-area p{
-    max-width: 800px;
+.fakta-content li h4 {
+    font-size: 20px;
     margin-bottom: 25px;
-    line-height: 1.5;
-    text-align: left;
-    padding-left: 0;
-
-}
-
-.section-title {
     text-transform: uppercase;
-    font-size: 35px;
-    margin-bottom: 5%;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
+.fakta-content li p{
+    margin: 0;
+}
 
-@media (max-width: 1000px)
-{
-    .section-title {
-        font-size: 35px;
-    }
-
-    .fakta-left,
-    .fakta-right{
+@media (max-width: 1000px) {
+    .fakta-content li {
         flex-basis: 100%;
+        margin-bottom: 65px;
+
     }
-    .fakta-content {
-        padding: 8px;
+
+    .fakta.content li:lastchild{
+        margin-bottom: 0;
+    }
+
+    .fakta.content li p {
+        padding: 0;
     }
 }
 
