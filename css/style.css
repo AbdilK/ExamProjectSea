@@ -230,9 +230,25 @@ section p {
   }
 }
 
-#fakta {
+#fakta1 {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#fakta2 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://handicraftsafimex.com/wp-content/uploads/2020/10/disposable-plastic-pollution.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://handicraftsafimex.com/wp-content/uploads/2020/10/disposable-plastic-pollution.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#fakta3 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://15tyiy1j6r1m26d5mxyq74md-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2020/08/garbage-on-the-beach-of-the-big-city.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://15tyiy1j6r1m26d5mxyq74md-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2020/08/garbage-on-the-beach-of-the-big-city.png);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -241,53 +257,36 @@ section p {
 #clip {
   -webkit-clip-path: circle(27.9% at 50% 50%);
           clip-path: circle(27.9% at 50% 50%);
+  max-width: 50%;
+  height: auto;
 }
 
-ul.fakta-content {
-  width: 100%;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.fakta-content li {
-  padding: 0 30px;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
-  text-align: center;
-}
-
-.fakta-content li h4 {
-  font-size: 20px;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 3px;
-}
-
-.fakta-content li p {
-  margin: 0;
+#text1 {
+  font-size: 35px;
 }
 
 @media (max-width: 1000px) {
-  .fakta-content li {
+  .fakta-area1 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    margin-bottom: 65px;
   }
-  .fakta.content li:lastchild {
-    margin-bottom: 0;
+  div.aligned {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
   }
-  .fakta.content li p {
-    padding: 0;
+  #clip {
+    width: 50%;
+  }
+  #text1 {
+    display: block;
+    font-size: 12px;
+  }
+  .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
