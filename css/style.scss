@@ -81,6 +81,12 @@ header .menu{
     display: none;
 }
 
+#highlighted {
+    background-color: $colorpal3;
+    color: white;
+    border-radius: 20px;
+}
+
 @media(max-width:1000px){
 
     header {

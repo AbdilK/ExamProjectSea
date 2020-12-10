@@ -94,6 +94,12 @@ header .menu {
   display: none;
 }
 
+#highlighted {
+  background-color: #024959;
+  color: white;
+  border-radius: 20px;
+}
+
 @media (max-width: 1000px) {
   header {
     position: fixed;
