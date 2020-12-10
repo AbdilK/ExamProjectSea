@@ -32,7 +32,7 @@
             margin: auto;
         }
 
-        
+
 
         /* Next & previous buttons */
         .prev,
@@ -60,7 +60,15 @@
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover,
         .next:hover {
-            background-color:#027373;
+            background-color: #027373;
+        }
+
+        @media (max-width: 1000px) {
+
+            .prev:hover,
+            .next:hover {
+                background-color: rgb(0,0,0,0.01);
+            }
         }
 
         /* Caption text */
@@ -85,7 +93,7 @@
             top: 0;
         }
 
-      
+
 
         /* The dots/bullets/indicators */
         .dot {
@@ -192,12 +200,12 @@
 
     <section class="fakta-area1" id="fakta1">
         <ul class="fakta-content"></ul>
-            <h3 class="section-title">FAKTA</h3>
-            <div class="aligned">
-                <img src="img/faktaFISK.jpg" id="clip" alt="">
-                <span id="text1">12-14.000 tons plastik bliver spist årligt af fisk i det nordlige stillehav.
-                    Det ville være det samme som ca. 282.235.250 Big Macs</span>
-            </div>
+        <h3 class="section-title">FAKTA</h3>
+        <div class="aligned">
+            <img src="img/faktaFISK.jpg" id="clip" alt="">
+            <span id="text1">12-14.000 tons plastik bliver spist årligt af fisk i det nordlige stillehav.
+                Det ville være det samme som ca. 282.235.250 Big Macs</span>
+        </div>
         </ul>
     </section>
 
@@ -207,7 +215,7 @@
     </section>
 
     <section class="fakta-area3" id="fakta3">
-        
+
 
     </section>
 
@@ -218,31 +226,26 @@
             <div class="mySlides fade">
                 <div class="numbertext">1 / 5</div>
                 <img src="img/Slideshow_1.png" style="width:100%">
-                <div class="text">Genbrugelige dagligdags produkter</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 5</div>
                 <img src="img/Slideshow_2.png" style="width:100%">
-                <div class="text">Benyt bionedbrydelige skrældeposer</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 5</div>
                 <img src="img/Slideshow_3.png" style="width:100%">
-                <div class="text">Affaldssortering</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 5</div>
                 <img src="img/Slideshow_4.png" style="width:100%">
-                <div class="text">Pantning</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">5 / 5</div>
                 <img src="img/Slideshow_5.png" style="width:100%">
-                <div class="text">Større mængder, mindre plastik</div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
