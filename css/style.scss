@@ -246,6 +246,10 @@ section p{
     font-size: 35px;
 }
 
+#text2 {
+    font-size: 35px;
+}
+
 @media (max-width: 1000px) {
 
 
@@ -255,12 +259,15 @@ section p{
 
     div.aligned {
         vertical-align: top;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         width: 120px;
     }
     #clip {
-        width: 50%;
+        clip-path: none;
+        height: 300px;
+        width: 1000px;
     }
     #text1 {
         display: block;
@@ -268,8 +275,11 @@ section p{
         
     }
     
-    .first {
-        order:1;
+    #text2 {
+        display: block;
+        font-size: 12px;
+        order: 1;
+        
     }
     
 

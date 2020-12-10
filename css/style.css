@@ -265,6 +265,10 @@ section p {
   font-size: 35px;
 }
 
+#text2 {
+  font-size: 35px;
+}
+
 @media (max-width: 1000px) {
   .fakta-area1 {
     -ms-flex-preferred-size: 100%;
@@ -272,18 +276,29 @@ section p {
   }
   div.aligned {
     vertical-align: top;
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     width: 120px;
   }
   #clip {
-    width: 50%;
+    -webkit-clip-path: none;
+            clip-path: none;
+    height: 300px;
+    width: 1000px;
   }
   #text1 {
     display: block;
     font-size: 12px;
   }
-  .first {
+  #text2 {
+    display: block;
+    font-size: 12px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
