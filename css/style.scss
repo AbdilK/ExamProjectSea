@@ -120,7 +120,7 @@ header .menu{
 @media(max-width:600px){
     header .logo{
         font-size:12px;
-        margin-left:5px;
+        margin-left:0px;
     }
     header ul{
         width:100%;
@@ -212,42 +212,56 @@ section p{
 }
 
 
-#fakta1 {
+#fakta {
     background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
-
-#fakta2 {
-    background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url(https://handicraftsafimex.com/wp-content/uploads/2020/10/disposable-plastic-pollution.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+ul.fakta-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#fakta3 {
-    background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url(https://15tyiy1j6r1m26d5mxyq74md-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2020/08/garbage-on-the-beach-of-the-big-city.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+.fakta-content li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+
+}
+.fakta-content li h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
-#clip {
-    clip-path: circle(28% at 50% 50%);
-    max-width: 50%;
-    height: auto;
+.fakta-content li p{
+    margin: 0;
 }
 
-#text1 {
-    font-size: 35px;
-}
+@media (max-width: 1000px) {
+    .fakta-content li {
+        flex-basis: 100%;
+        margin-bottom: 65px;
 
-#text2 {
-    font-size: 35px;
+    }
+
+    .fakta.content li:lastchild{
+        margin-bottom: 0;
+    }
+
+    .fakta.content li p {
+        padding: 0;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -336,11 +350,13 @@ ul.plastforbrug-content{
         padding: 0;
     }
 }
-
 #firmaer {
-    background: $colorpal3;
+    background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
-
 ul.firmaer-content{
     width: 100%;
     display: -webkit-flex;
@@ -350,32 +366,41 @@ ul.firmaer-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
-.firmaer {
-    
+.firmaer-content li {
+    padding: 0 30px;
+    flex-basis: 33%;
     text-align: center;
 
 }
-
-.firmaer img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-bottom: 20px;
-}
-
-.firmaer-area p{
-    max-width: 800px;
+.firmaer-content li h4 {
+    font-size: 20px;
     margin-bottom: 25px;
-    line-height: 1.5;
-    text-align: left;
-    padding-left: 0;
-
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
+.firmaer-content li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .firmaer-content li {
+        flex-basis: 100%;
+        margin-bottom: 65px;
+
+    }
+
+    .firmaer.content li:lastchild{
+        margin-bottom: 0;
+    }
+
+    .firmaer.content li p {
+        padding: 0;
+    }
+}
 .section-title {
     text-transform: uppercase;
     font-size: 35px;

@@ -137,7 +137,7 @@ header .menu {
 @media (max-width: 600px) {
   header .logo {
     font-size: 12px;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   header ul {
     width: 100%;
@@ -230,7 +230,7 @@ section p {
   }
 }
 
-#fakta1 {
+#fakta {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
   background-size: cover;
@@ -238,35 +238,52 @@ section p {
   background-attachment: fixed;
 }
 
-#fakta2 {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://handicraftsafimex.com/wp-content/uploads/2020/10/disposable-plastic-pollution.jpg);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://handicraftsafimex.com/wp-content/uploads/2020/10/disposable-plastic-pollution.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+ul.fakta-content {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#fakta3 {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://15tyiy1j6r1m26d5mxyq74md-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2020/08/garbage-on-the-beach-of-the-big-city.png);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://15tyiy1j6r1m26d5mxyq74md-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2020/08/garbage-on-the-beach-of-the-big-city.png);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+.fakta-content li {
+  padding: 0 30px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
 }
 
-#clip {
-  -webkit-clip-path: circle(28% at 50% 50%);
-          clip-path: circle(28% at 50% 50%);
-  max-width: 50%;
-  height: auto;
+.fakta-content li h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
-#text1 {
-  font-size: 35px;
+.fakta-content li p {
+  margin: 0;
 }
 
-#text2 {
-  font-size: 35px;
+@media (max-width: 1000px) {
+  .fakta-content li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 65px;
+  }
+  .fakta.content li:lastchild {
+    margin-bottom: 0;
+  }
+  .fakta.content li p {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -362,7 +379,11 @@ ul.plastforbrug-content {
 }
 
 #firmaer {
-  background: #024959;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://p0.pikist.com/photos/220/833/air-bubbles-sea-water-ocean-bubbles-blue-air-bubble-air-diving.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 ul.firmaer-content {
@@ -380,24 +401,37 @@ ul.firmaer-content {
           justify-content: center;
 }
 
-.firmaer {
+.firmaer-content li {
+  padding: 0 30px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
   text-align: center;
 }
 
-.firmaer img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-bottom: 20px;
+.firmaer-content li h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
-.firmaer-area p {
-  max-width: 800px;
-  margin-bottom: 25px;
-  line-height: 1.5;
-  text-align: left;
-  padding-left: 0;
+.firmaer-content li p {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .firmaer-content li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 65px;
+  }
+  .firmaer.content li:lastchild {
+    margin-bottom: 0;
+  }
+  .firmaer.content li p {
+    padding: 0;
+  }
 }
 
 .section-title {
