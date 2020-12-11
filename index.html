@@ -196,6 +196,7 @@
             display: flex;
             align-items: center;
         }
+        
 
     </style>
 
@@ -366,6 +367,7 @@
 
     <section class="stot-area" id="stot">
         <h3 class="section-title">STØT OS</h3>
+        <p> Hjælp os med at fjerne plastik </p>
         <!-- form section -->
     <div class="donate">
         <button>Donate</button>
@@ -385,7 +387,7 @@
         <h2>Donations beløb</h2>
         <form name="customDonation" id="customDonation">
         <div class="input-group-1">
-          <label for="custom-amount">kr</label>
+          <label for="custom-amount" text-align="center"></label>
           <input id="custom-amount" name="custom-amount" type="text">
           <div class="warn"></div>
         </div>
@@ -401,35 +403,35 @@
       </div>
       <section id="details">
         <div class="contact-info">
-            <h2>Basic Information</h2>
+            <h2>Information</h2>
             <form class="clearfix">
                 <div class="input-group-2">
-                <label>First Name</label>
+                <label>Fornavn</label>
                 <input type="text">
                 </div>
                 <div class="input-group-2">
-                <label>Last Name</label>
+                <label>Efternavn</label>
                 <input type="text">
                 </div>
                 <div class="input-group-1">
-                <label>Email Address</label>
+                <label>Email adresse</label>
                 <input type="text">
                 </div>
                 <hr>
                 <div class="input-group-1">
-                <label>Street Address</label>
+                <label>Adresse</label>
                 <input type="text">
                 </div>
                 <div class="input-group-3">
-                <label>City</label>
+                <label>Postnr</label>
                 <input type="text">
                 </div>
                 <div class="input-group-3">
-                <label>State</label>
+                <label>Region</label>
                 <input type="text">
                 </div>
                 <div class="input-group-3">
-                <label>Zip Code</label>
+                <label>By</label>
                 <input type="text">
                 </div>
             </form>
@@ -446,33 +448,25 @@
   <!-- card section -->
       <section id="card">
           <div class="contact-info">
-              <h2>Payment Information</h2>
+              <h2>Betalings information</h2>
               <form class="clearfix">
                   <div class="input-group-1">
-                    <label>Card Number</label>
+                    <label>Kort nummer</label>
                     <input type="text">
                   </div>
                   <div class="clearfix">
                     <div class="input-group-2">
-                      <label>Expiration Date</label>
+                      <label>Udløbsdato</label>
                       <input type="text">
                     </div>
                     
                     <div class="input-group-2">
-                    <label>Security Code (CVV)</label>
+                    <label>CVV</label>
                     <input type="text">
                     </div>
                   </div>
                   <hr>
-                  <div class="input-group-1">
-                    <label>Employer</label>
-                    <input type="text">
-                  </div>
                   
-                  <div class="input-group-1">
-                    <label>Occupation</label>
-                    <input type="text">
-                  </div>
               </form>
               <div class="clearfix">
                   <button class="back" type="button">Back
@@ -502,10 +496,10 @@
       </section>
   <!-- checking section -->
       <section id="check">
-          <h2>Confirm Payment</h2>
-          <p>Please confirm your contribution of</p>
+          <h2>Godkend betaling</h2>
+          <p>Du er ved at støtte os med en betaling på: </p>
           <span>8888kr</span>
-          <button class="next" type="button">Confirm</button>
+          <button class="next" type="button">Godkend</button>
       </section>
   <!-- confirmation section -->
       <section id="confirm">

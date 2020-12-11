@@ -41,9 +41,7 @@ body{
     border-radius: 0.3rem;
     margin: 0 auto;
     margin-top: -50px;
-    .active & {
-      //display: block;
-    }
+   
   }
   .donate input{
     -webkit-appearance: none;
@@ -474,9 +472,7 @@ body{
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
       }
     }
-    button{
-      
-    }
+    
     p{
       font-weight: 300;
       letter-spacing: 0.03em;
