@@ -284,6 +284,11 @@ ul.fakta-content{
     font-size: 18px;
 }
 
+.aligned {
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 1000px) {
     .fakta-content li {
         flex-basis: 100%;
@@ -311,6 +316,7 @@ ul.fakta-content{
         font-size: 18px;
     }
 }
+
 
 
 

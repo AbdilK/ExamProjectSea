@@ -310,6 +310,15 @@ ul.fakta-content {
   font-size: 18px;
 }
 
+.aligned {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 1000px) {
   .fakta-content li {
     -ms-flex-preferred-size: 100%;
