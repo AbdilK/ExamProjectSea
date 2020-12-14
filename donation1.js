@@ -111,5 +111,5 @@ $("#check .next").on('click', function(){
 	setTimeout(function() {
 		$('.processing .message, .outer').fadeOut();
   	$("#confirm").addClass('animated fadeInUp');
-	}, 6250);
+	}, 1000);
 });

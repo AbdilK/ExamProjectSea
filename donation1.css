@@ -9,6 +9,7 @@ hr {
   border: 0;
   opacity: 0.2;
   height: 2px;
+  margin-top: 1.4em;
 }
 
 button {
@@ -77,7 +78,7 @@ button {
 }
 
 #custom {
-  max-width: 400px;
+  max-width: auto;
   margin: 0 auto;
   display: none;
   padding-top: 7em;
@@ -202,7 +203,7 @@ button {
 }
 
 #details {
-  padding-top: 7em;
+  padding-top: auto;
   text-align: left;
   display: none;
   text-align: center;
@@ -571,6 +572,7 @@ button {
 #confirm {
   display: none;
   height: 300px;
+  padding-bottom: 100px;
 }
 
 #confirm.animated {
@@ -607,27 +609,14 @@ button {
   border-radius: 0.2em;
 }
 
-.processing {
-  display: none;
-}
-
-.processing .mask {
-  position: absolute;
-  width: 130px;
-  height: 100px;
-  background: #024959;
-  top: -3em;
-  z-index: 999;
-}
-
-.processing .check {
+.check {
   position: relative;
   margin: 150px auto 70px;
   width: 110px;
   height: 1px;
 }
 
-.processing .check span {
+.check span {
   display: block;
   position: absolute;
   height: 0.5em;
@@ -636,7 +625,7 @@ button {
   background-color: #34d461;
 }
 
-.processing .check span:first-child {
+.check span:first-child {
   left: 2em;
   /* IE 9 */
   -webkit-transform: rotate(-45deg);
@@ -644,7 +633,7 @@ button {
   transform: rotate(-45deg);
 }
 
-.processing .check span:last-child {
+.check span:last-child {
   width: 3em;
   top: 0.9em;
   left: 0.3em;
@@ -654,7 +643,7 @@ button {
   transform: rotate(45deg);
 }
 
-.processing .outer {
+.outer {
   position: relative;
   background-color: #2e64c0;
   height: 0.5em;
@@ -663,7 +652,7 @@ button {
   border-radius: 3px;
 }
 
-.processing .progress {
+.progress {
   position: absolute;
   background-color: #528cef;
   height: 0.5em;
@@ -676,7 +665,7 @@ button {
   overflow: hidden;
 }
 
-.processing span {
+span {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   color: #96bdff;

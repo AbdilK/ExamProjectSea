@@ -9,6 +9,7 @@ body{
     border:0;
     opacity: 0.2;
     height: 2px;
+    margin-top: 1.4em;
   }
   
   button{
@@ -72,7 +73,7 @@ body{
   }
   
   #custom{
-    max-width: 400px;
+    max-width: auto;
     margin: 0 auto;
     display: none;
     padding-top: 7em;
@@ -182,7 +183,7 @@ body{
   }
   
   #details{
-    padding-top: 7em;
+    padding-top: auto;
     text-align: left;
     display: none;
     text-align: center;
@@ -507,6 +508,7 @@ body{
   #confirm{
     display: none;
     height: 300px;
+    padding-bottom: 100px;
     &.animated{
       display: block;
     }
@@ -539,16 +541,6 @@ body{
     }
   }
   
-  .processing{
-    display: none;
-    .mask{
-    position: absolute;
-    width: 130px;
-    height: 100px;
-    background: #024959;
-    top: -3em;
-    z-index: 999;
-  }
   
   .check{
     position: relative;
@@ -607,7 +599,7 @@ body{
     letter-spacing: 0.3em;
     color: #96bdff;
   }
-  }
+  
   
   .clearfix:before,
   .clearfix:after {
