@@ -4,6 +4,9 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: halyard-text, sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 html {
@@ -92,12 +95,6 @@ header ul li a:hover {
 header .menu {
   font-size: 2.5em;
   display: none;
-}
-
-#highlighted {
-  background-color: #024959;
-  color: white;
-  border-radius: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -233,7 +230,7 @@ section p {
 }
 
 .banner-area .banner-img {
-  background-image: url(https://www.blindtreasures.com/wp-content/uploads/2019/10/ocean-pollution-solutions.jpg);
+  background-image: url("../img/cropped-biigplastic-bag.jpg");
   position: absolute;
   top: 0;
   left: 0;
@@ -271,8 +268,8 @@ section p {
 }
 
 #fakta {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://images.unsplash.com/photo-1596487162379-fbab6c590a42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2978&q=80);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1596487162379-fbab6c590a42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2978&q=80);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url("../img/bobblesbg.jfif");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url("../img/bobblesbg.jfif");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -373,8 +370,7 @@ ul.fakta-content {
 }
 
 #plastforbrug {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://images.unsplash.com/photo-1589634749000-1e72ec00a13f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2167&q=80);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1589634749000-1e72ec00a13f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2167&q=80);
+  background: url("../img/water-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -430,8 +426,8 @@ ul.plastforbrug-content {
 }
 
 #firmaer {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url(https://images.unsplash.com/photo-1522387026079-bd4a4d73115d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2978&q=80);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1522387026079-bd4a4d73115d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2978&q=80);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url("../img/seaship.jfif");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url("../img/seaship.jfif");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
