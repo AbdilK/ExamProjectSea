@@ -263,7 +263,7 @@ ul.fakta-content{
     display: -o-flex;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .fakta-content li {
@@ -518,12 +518,12 @@ ul.stot-content{
     display: -o-flex;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     
 }
 
 .stot {
-    text-align: center;
+    text-align: justify;
 
 }
 
@@ -531,7 +531,7 @@ ul.stot-content{
     max-width: 800px;
     margin-bottom: 25px;
     line-height: 1.5;
-    text-align: center;
+    text-align: justify;
     padding-left: 0;
 
 }

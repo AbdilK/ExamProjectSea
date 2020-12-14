@@ -288,9 +288,9 @@ ul.fakta-content {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .fakta-content li {
@@ -557,20 +557,20 @@ ul.stot-content {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .stot {
-  text-align: center;
+  text-align: justify;
 }
 
 .stot-area p {
   max-width: 800px;
   margin-bottom: 25px;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
   padding-left: 0;
 }
 
