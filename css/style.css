@@ -215,7 +215,7 @@ section p {
 @media (max-width: 1000px) {
   section p {
     padding: 0 0;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -298,7 +298,7 @@ ul.fakta-content {
 }
 
 .fakta-content li h4 {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 25px;
   text-transform: uppercase;
   font-weight: 500;
@@ -307,6 +307,7 @@ ul.fakta-content {
 
 .fakta-content li p {
   margin: 0;
+  font-size: 18px;
 }
 
 @media (max-width: 1000px) {
@@ -322,9 +323,17 @@ ul.fakta-content {
   .fakta.content li:lastchild {
     margin-bottom: 0;
   }
+  .fakta-content li h4 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
   .fakta.content li p {
     padding: 0;
     text-align: left;
+    font-size: 18px;
   }
 }
 
@@ -400,9 +409,9 @@ ul.plastforbrug-content {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .plastforbrug-content li {
@@ -413,7 +422,7 @@ ul.plastforbrug-content {
 }
 
 .plastforbrug-content li h4 {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 25px;
   text-transform: uppercase;
   font-weight: 500;
@@ -422,20 +431,33 @@ ul.plastforbrug-content {
 
 .plastforbrug-content li p {
   margin: 0;
+  font-size: 18px;
 }
 
 @media (max-width: 1000px) {
   .plastforbrug-content li {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding: 0 0px;
     margin-bottom: 65px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .plastforbrug.content li:lastchild {
     margin-bottom: 0;
   }
+  .plastforbrug-content li h4 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
   .plastforbrug.content li p {
     padding: 0;
-    text-align: justify;
+    text-align: left;
+    font-size: 18px;
   }
 }
 
