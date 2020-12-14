@@ -710,4 +710,44 @@ footer {
   background-color: #262626;
   padding: 60px 0;
 }
+
+/** animation **/
+/*animation element*/
+.animation-element {
+  opacity: 0;
+}
+
+/*animation element sliding left*/
+.animation-element.slide-left {
+  opacity: 0;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/*animation slide left styled for testimonials*/
+/*media queries for small devices*/
+@media screen and (max-width: 678px) {
+  /*testimonials*/
+  .animation-element.slide-left.testimonial,
+  .animation-element.slide-left.testimonial:nth-of-type(odd),
+  .animation-element.slide-left.testimonial:nth-of-type(even) {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .animation-element.slide-left.testimonial .right,
+  .animation-element.slide-left.testimonial .left,
+  .animation-element.slide-left.testimonial .content,
+  .animation-element.slide-left.testimonial .rating {
+    text-align: center;
+    float: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
