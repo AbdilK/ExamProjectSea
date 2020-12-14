@@ -6,8 +6,8 @@ var x = $(window).width() - 400;
 $('.donate form').on("click", function(){
   amount = $('input[name=amount]:checked', '#donAmount').val();
   reach = amount * .2;
-  $('#confirm .amount').text(amount + " kr");
-  $('#check span').text(amount + " kr");
+  $('#confirm .amount').text(amount + " DKK");
+  $('#check span').text(amount + " DKK");
   $('#confirm strong').text(reach + " kg");
 });
 
@@ -41,8 +41,8 @@ $("#custom").css("margin-right", x/2);
 $('#custom .next').on("click", function(){
   amount = $('input[name=custom-amount]', '#customDonation').val();
   reach = amount * .2;
-  $('#confirm .amount').text(amount + "kr");
-  $('#check span').text(amount + "kr");
+  $('#confirm .amount').text(amount + " DKK");
+  $('#check span').text(amount + " DKK");
   $('#confirm strong').text(reach + " kg");
   $("#custom").hide("slide", { easing: "easeInQuart", direction: "left" }, 700, function(){
     $("#details").show("slide", { easing: "easeOutQuart", direction: "right" }, 700);
