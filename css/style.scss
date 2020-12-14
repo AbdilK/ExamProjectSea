@@ -289,6 +289,7 @@ ul.fakta-content{
         flex-basis: 100%;
         padding: 0 0px;
         margin-bottom: 65px;
+        justify-content: flex-start;
 
     }
 
@@ -299,9 +300,10 @@ ul.fakta-content{
     .fakta.content li p {
         padding: 0;
         text-align: justify;
+        margin: -80px !important;
     }
 }
-/** IMG STYLING* *//
+/** IMG STYLING* */
 #clip {
     clip-path: circle(50.0% at 50% 50%);
     margin-bottom: 500px;
