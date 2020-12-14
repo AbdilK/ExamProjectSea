@@ -106,10 +106,10 @@ header .menu {
   }
   header ul {
     position: fixed;
-    top: 100px;
+    top: 75px;
     right: -100%;
     background: whitesmoke;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 75px);
     width: 50%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
