@@ -1,3 +1,10 @@
+
+/** Color palette **/
+$colorpal1: #BACBD9;
+$colorpal2: #012840;
+$colorpal3: #024959;
+$colorpal4: #027373;
+$colorpal5: #60A6A6;
 body{
     text-align: center;
     font-family: 'Lato';
@@ -73,7 +80,7 @@ body{
   }
   
   #custom{
-    max-width: auto;
+    max-width: 400px;
     margin: 0 auto;
     display: none;
     padding-top: 7em;
@@ -81,7 +88,7 @@ body{
       text-align: center;
       margin: 0;
       letter-spacing: 0.2em;
-      color: #96bdff;
+      color: $colorpal1;
       font-weight: 700;
       opacity: 0.7;
       text-transform: uppercase;
@@ -232,7 +239,7 @@ body{
       text-align: center;
       margin: 0;
       letter-spacing: 0.2em;
-      color: #96bdff;
+      color: $colorpal1;
       font-weight: 700;
       opacity: 0.7;
       text-transform: uppercase;
@@ -284,9 +291,9 @@ body{
     input[type="text"]{
       text-align: left;
       font-family: 'Lato';
-      background-color: rgba(26,68,139, 0.3);
+      background-color: $colorpal5;
       font-weight: 300;
-      border: 0px solid rgba(132,178,255, 0.67);
+      border: 0px solid;
       color: white;
       font-size: 1.3em;
       box-sizing: border-box;
@@ -367,7 +374,7 @@ body{
       text-align: center;
       margin: 0;
       letter-spacing: 0.2em;
-      color: #96bdff;
+      color: $colorpal1;
       font-weight: 700;
       opacity: 0.7;
       text-transform: uppercase;
@@ -419,7 +426,7 @@ body{
     input[type="text"]{
       text-align: left;
       font-family: 'Lato';
-      background-color: rgba(26,68,139, 0.3);
+      background-color:$colorpal5;
       font-weight: 300;
       border: 0px solid rgba(132,178,255, 0.67);
       color: white;
@@ -460,7 +467,6 @@ body{
       transition: all 0.2s ease;
       display: block;
       margin: 1.5em auto 1em;
-      text-shadow: 2px 2px #1f9a42;
       &:hover, &:focus{
         //background-color: red;
         -ms-transform: scale(1.04,1.04); /* IE 9 */
@@ -484,7 +490,7 @@ body{
       text-align: center;
       margin: 0;
       letter-spacing: 0.2em;
-      color: #96bdff;
+      color: $colorpal1;
       font-weight: 700;
       opacity: 0.7;
       text-transform: uppercase;
@@ -500,7 +506,6 @@ body{
       font-size: 3.2em;
       letter-spacing: 0.1em;
       padding: 0.2em 1em 0.3em;
-      text-shadow: 2px 2px #255bb5;
     }
     
   }
@@ -513,7 +518,7 @@ body{
       display: block;
     }
     h2{
-      color: #96bdff;
+      color: $colorpal1;
       margin: 0;
       padding-top: 0px;
       padding-bottom: 20px;
@@ -531,11 +536,10 @@ body{
     }
     span{
       color: white;
-      background-color: #2dbb55;
+      background-color: $colorpal4;
       padding: 0.25em 0.45em;
       margin: 0 0.15em;
       font-weight: 700;
-      text-shadow: 2px 2px #1f9a42;
       font-size: 1em;
       border-radius: 0.2em;
     }
@@ -575,7 +579,6 @@ body{
     position: relative;
     background-color: #2e64c0;
     height: 0.5em;
-    width: 14em;
     margin: 1em auto;
     border-radius: 3px;
   }
