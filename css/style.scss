@@ -189,6 +189,12 @@ section p{
 
 }
 
+@media (max-width: 1000px){
+    section p {
+        padding: 0 0;
+    }
+}
+
 .banner-area {
     position: relative;
     justify-content: center;
@@ -295,7 +301,10 @@ ul.fakta-content{
 /** IMG STYLING* *//
 #clip {
     clip-path: circle(50.0% at 50% 50%);
+    margin-bottom: 500px;
 }
+
+
 
 
 @media (max-width: 1000px) {
@@ -313,7 +322,8 @@ ul.fakta-content{
         width: 200px;
     }
     #clip {
-        clip-path: none;
+        clip-path: circle(50.0% at 50% 50%);
+
         
     }
     #text1 {
