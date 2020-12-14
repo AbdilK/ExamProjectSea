@@ -336,6 +336,20 @@ ul.fakta-content {
 }
 
 @media (max-width: 1000px) {
+  #clip {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  #clip {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
   .fakta-area1 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
