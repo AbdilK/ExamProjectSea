@@ -319,6 +319,11 @@ ul.fakta-content {
   }
 }
 
+#clip {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
 @media (max-width: 1000px) {
   .fakta-area1 {
     -ms-flex-preferred-size: 100%;
@@ -339,8 +344,6 @@ ul.fakta-content {
   #clip {
     -webkit-clip-path: none;
             clip-path: none;
-    height: 300px;
-    width: 500px;
   }
   #text1 {
     display: block;

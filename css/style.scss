@@ -292,6 +292,11 @@ ul.fakta-content{
         padding: 0;
     }
 }
+/** IMG STYLING* *//
+#clip {
+    clip-path: circle(50.0% at 50% 50%);
+}
+
 
 @media (max-width: 1000px) {
 
@@ -309,8 +314,7 @@ ul.fakta-content{
     }
     #clip {
         clip-path: none;
-        height: 300px;
-        width: 500px;
+        
     }
     #text1 {
         display: block;
