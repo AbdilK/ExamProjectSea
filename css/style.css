@@ -29,6 +29,9 @@ a {
   text-decoration: none;
 }
 
+/** *********************** **/
+/** header ****** ********** **/
+/** *********************** **/
 #overskrift {
   color: #BACBD9;
 }
@@ -186,24 +189,6 @@ header .menu {
   }
 }
 
-.stot-area {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  padding: 100px 10px;
-}
-
 section p {
   max-width: 800px;
   text-align: center;
@@ -267,6 +252,9 @@ section p {
   }
 }
 
+/** *********************** **/
+/** fakta ****** ********** **/
+/** *********************** **/
 #fakta {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url("../img/bobblesbg.jfif");
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url("../img/bobblesbg.jfif");
@@ -401,6 +389,9 @@ ul.fakta-content {
   }
 }
 
+/** *********************** **/
+/** Plastforbrug ********** **/
+/** *********************** **/
 #plastforbrug {
   background: url("../img/water-bg.jpg");
   background-size: cover;
@@ -470,6 +461,140 @@ ul.plastforbrug-content {
   }
 }
 
+/** *********************** **/
+/** Slideshow @Plastforbrug **/
+/** *********************** **/
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.slidePrev,
+.slideNext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #024959;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slideNext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slidePrev:hover,
+.slideNext:hover {
+  background-color: #027373;
+}
+
+@media (max-width: 1000px) {
+  .slidePrev:hover,
+  .slideNext:hover {
+    background-color: black;
+  }
+}
+
+/* Caption text */
+.text {
+  color: #024959;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #60A6A6;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #027373;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #024959;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .slidePrev,
+  .slideNext,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/** *********************** **/
+/** Firmaer ******************/
+/** *********************** **/
 #firmaer {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url("../img/seaship.jfif");
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url("../img/seaship.jfif");
@@ -560,6 +685,9 @@ ul.firmaer-content {
   color: #262626;
 }
 
+/** *********************** **/
+/** om os** ******************/
+/** *********************** **/
 .img-area {
   display: -moz-flex;
   display: -ms-flex;
@@ -615,6 +743,24 @@ ul.stot-content {
   text-align: justify;
 }
 
+.stot-area {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 100px 10px;
+}
+
 .stot-area p {
   max-width: 800px;
   margin-bottom: 25px;
@@ -649,6 +795,9 @@ ul.stot-content {
   }
 }
 
+/** *********************** **/
+/** kontakt ******************/
+/** *********************** **/
 #kontakt {
   background: #027373;
 }
@@ -700,6 +849,9 @@ ul.kontakt-content {
   }
 }
 
+/** *********************** **/
+/** footer* ******************/
+/** *********************** **/
 footer {
   display: -moz-flex;
   display: -ms-flex;
