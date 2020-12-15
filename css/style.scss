@@ -167,9 +167,56 @@ header .menu{
 .kontakt-area  {
         padding: 50px 10px;
     }
+
+    .banner-area h3 {
+        margin-top: 150px;
+    }
 }
 
+/** BACKGROUND FIX FOR TABLET AND MOBILE **/
+@media (max-width: 1000px){
+    .banner-img {
+        background-image: url("../img/TABLETcropped-biigplastic-bag.jpg") !important;
+        
+    }
+    
+    #fakta {
+        background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url("../img/TABLETbobblesbg.jpg") !important;
+        
+    }
 
+    #plastforbrug {
+        background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url("../img/TABLETwater-bg.jpg") !important;
+        
+    }
+
+    #firmaer {
+        background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url("../img/TABLETseaship.jpg") !important;
+        
+    }
+}
+
+@media (max-width: 600px){
+    .banner-img {
+        background: url("../img/MOBILEcropped-biigplastic-bag.jpg") !important;
+        ;
+    }
+    
+    #fakta {
+        background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url("../img/MOBILEbobblesbg.jpg") !important;
+        
+    }
+
+    #plastforbrug {
+        background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url("../img/MOBILEwater-bg.jpg") !important;
+        
+    }
+
+    #firmaer {
+        background: linear-gradient(to right, rgba(0,0,0,0.8)rgba(0,0,0,0.8)), url("../img/MOBILEseaship.jpg") !important;
+        
+    }
+}
 
 
 section p{
@@ -224,7 +271,7 @@ section p{
     text-transform: uppercase;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .banner-area {
         min-height: 1000px;
     }
@@ -250,6 +297,8 @@ section p{
     background-position: center center;
     background-attachment: fixed;
 }
+
+
 ul.fakta-content{
     width: 100%;
     display: -webkit-flex;
