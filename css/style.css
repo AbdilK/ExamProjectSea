@@ -684,6 +684,7 @@ ul.firmaer-content {
 
 .firmaer-content li p {
   margin: 0;
+  font-size: 18px;
 }
 
 @media (max-width: 1000px) {
