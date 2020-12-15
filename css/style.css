@@ -393,7 +393,8 @@ ul.fakta-content {
 /** Plastforbrug ********** **/
 /** *********************** **/
 #plastforbrug {
-  background: url("../img/water-bg.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8))), url("../img/water-bg.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url("../img/water-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
