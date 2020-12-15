@@ -6,6 +6,12 @@ $colorpal3: #024959;
 $colorpal4: #027373;
 $colorpal5: #60A6A6;
 
+* {
+    font-family: halyard-text, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
 
 .stot-area{
     text-align: center;
@@ -67,7 +73,7 @@ $colorpal5: #60A6A6;
     transition: all 0.05s ease;
     &:hover, &:focus{
       background-color: #ffffff;
-      color: $colorpal;
+      color: $colorpal4;
       -ms-transform: scale(1.02,1.02); /* IE 9 */
       -webkit-transform: scale(1.02,1.02); /* Safari */
       transform: scale(1.02,1.02);

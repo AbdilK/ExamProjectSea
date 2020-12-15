@@ -1,4 +1,10 @@
 /** Color palette **/
+* {
+  font-family: halyard-text, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
 .stot-area {
   text-align: center;
   font-family: halyard-display, sans-serif;
@@ -64,7 +70,7 @@ button {
 
 .donate label:hover, .donate label:focus {
   background-color: #ffffff;
-  color: #60A6A6;
+  color: #027373;
   /* IE 9 */
   -webkit-transform: scale(1.02, 1.02);
   /* Safari */
@@ -88,7 +94,7 @@ button {
   text-align: center;
   margin: 0;
   letter-spacing: 0.2em;
-  color: #BACBD9;
+  color: #027373;
   font-weight: 700;
   opacity: 0.7;
   text-transform: uppercase;
@@ -134,8 +140,8 @@ button {
 }
 
 #custom button {
-  background-color: #BACBD9;
-  border-color: #BACBD9;
+  background-color: #027373;
+  border-color: #027373;
   font-size: 1.2em;
   margin-top: 1.2em;
   -webkit-transition: all 0.2s ease;
@@ -156,7 +162,7 @@ button {
   position: relative;
   text-indent: -999em;
   background-color: transparent;
-  border: 3px solid #BACBD9;
+  border: 3px solid #027373;
   width: 2.4em;
   height: 2.4em;
   border-radius: 50%;
@@ -165,7 +171,7 @@ button {
 #custom .back span {
   position: absolute;
   display: block;
-  background-color: #BACBD9;
+  background-color: #027373;
   width: 60%;
   top: 50%;
   margin-top: -1.5px;
@@ -215,7 +221,7 @@ button {
   position: relative;
   text-indent: -999em;
   background-color: transparent;
-  border: 3px solid #BACBD9;
+  border: 3px solid #027373;
   width: 2.4em;
   height: 2.4em;
   border-radius: 50%;
@@ -224,7 +230,7 @@ button {
 #details .back span {
   position: absolute;
   display: block;
-  background-color: #BACBD9;
+  background-color: #027373;
   width: 60%;
   top: 50%;
   margin-top: -1.5px;
@@ -261,7 +267,7 @@ button {
   text-align: center;
   margin: 0;
   letter-spacing: 0.2em;
-  color: #BACBD9;
+  color: #027373;
   font-weight: 700;
   opacity: 0.7;
   text-transform: uppercase;
@@ -337,8 +343,8 @@ button {
 }
 
 #details button {
-  background-color: #BACBD9;
-  border-color: #BACBD9;
+  background-color: #027373;
+  border-color: #027373;
   font-size: 1.2em;
   margin-top: 1.2em;
   -webkit-transition: all 0.2s ease;
@@ -371,7 +377,7 @@ button {
   position: relative;
   text-indent: -999em;
   background-color: transparent;
-  border: 3px solid #BACBD9;
+  border: 3px solid #027373;
   width: 2.4em;
   height: 2.4em;
   border-radius: 50%;
@@ -380,7 +386,7 @@ button {
 #card .back span {
   position: absolute;
   display: block;
-  background-color: #BACBD9;
+  background-color: #027373;
   width: 60%;
   top: 50%;
   margin-top: -1.5px;
@@ -417,7 +423,7 @@ button {
   text-align: center;
   margin: 0;
   letter-spacing: 0.2em;
-  color: #BACBD9;
+  color: #027373;
   font-weight: 700;
   opacity: 0.7;
   text-transform: uppercase;
@@ -493,8 +499,8 @@ button {
 }
 
 #card button {
-  background-color: #BACBD9;
-  border-color: #012840;
+  background-color: #027373;
+  border-color: #027373;
   font-size: 1.2em;
   margin-top: 1.2em;
   -webkit-transition: all 0.2s ease;
@@ -517,8 +523,8 @@ button {
 }
 
 #check button {
-  background-color: #2dbb55;
-  border-color: #2dbb55;
+  background-color: #027373;
+  border-color: #027373;
   font-size: 1.2em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -548,7 +554,7 @@ button {
   text-align: center;
   margin: 0;
   letter-spacing: 0.2em;
-  color: #BACBD9;
+  color: #027373;
   font-weight: 700;
   opacity: 0.7;
   text-transform: uppercase;
@@ -578,7 +584,7 @@ button {
 }
 
 #confirm h2 {
-  color: #BACBD9;
+  color: #027373;
   margin: 0;
   padding-top: 0px;
   padding-bottom: 20px;
@@ -619,7 +625,7 @@ button {
   height: 0.5em;
   width: 5em;
   border-radius: 3px;
-  background-color: #34d461;
+  background-color: #027373;
 }
 
 .check span:first-child {
