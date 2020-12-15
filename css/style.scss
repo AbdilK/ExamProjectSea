@@ -812,6 +812,14 @@ ul.kontakt-content {
 
 }
 
+.imgCaption {
+    display: block;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
 @media (max-width: 1000px) {
     .kontakt-content li {
         flex-basis: 100%;

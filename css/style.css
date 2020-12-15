@@ -834,6 +834,14 @@ ul.kontakt-content {
   margin: 0;
 }
 
+.imgCaption {
+  display: block;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+}
+
 @media (max-width: 1000px) {
   .kontakt-content li {
     -ms-flex-preferred-size: 100%;
